@@ -11,6 +11,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+       if(supportActionBar != null){
+           supportActionBar!!.hide()
+       }
+
 
 
         buttonRandom.setOnClickListener(this)
@@ -19,8 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
     override fun onClick(v: View?) {
         if(v?.id == R.id.buttonRandom || v?.id == R.id.textNumber){
-            val id = random()
-
+           textNumber.text = random().toString()
         }
     }
     fun random(): Int{
