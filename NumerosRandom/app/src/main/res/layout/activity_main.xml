@@ -9,6 +9,7 @@
 
     <TextView
         android:id="@+id/textNumber"
+<<<<<<< Updated upstream
         android:layout_width="228dp"
         android:layout_height="192dp"
         android:layout_marginTop="148dp"
@@ -16,17 +17,27 @@
         android:textColor="@color/black"
         android:textSize="80sp"
         app:layout_constraintHorizontal_bias="0.497"
+=======
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Numeros Randomicos"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+>>>>>>> Stashed changes
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:textColor="#45f523"
+        android:background="@color/black"
         android:id="@+id/buttonRandom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="25dp"
         android:padding="20dp"
-        android:text="Random"
+        android:text="Aperte aki"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
